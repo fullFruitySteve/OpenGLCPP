@@ -121,6 +121,8 @@ namespace test
 
 		//Set the material
 		m_LightingMapsShader->SetUniform1f("material.shininess", 32.0f);
+		m_LightingMapsShader->SetUniform1i("material.diffuse", 0);
+		m_LightingMapsShader->SetUniform1i("material.specular", 1);
 		m_LightingMapsShader->SetUniform3f("viewPos", directionalLightCamera.Position);
 
 		// view/projection transformations

@@ -127,6 +127,8 @@ namespace test
 
 		//Set the material
 		m_SpotLightShader->SetUniform1f("material.shininess", 32.0f);
+		m_SpotLightShader->SetUniform1i("material.diffuse", 0);
+		m_SpotLightShader->SetUniform1i("material.specular", 1);
 		m_SpotLightShader->SetUniform3f("viewPos", spotLight_Camera.Position);
 
 		// view/projection transformations
